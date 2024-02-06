@@ -1,6 +1,7 @@
 import {Component, OnInit, Output, EventEmitter, ViewChild} from '@angular/core';
 import {Employee, EmployeeService} from '../../services/employee.service';
 import {Modalable} from '../modal/modalable';
+import { ModalComponent } from '../modal/modal.component';
 
 declare const $;
 
@@ -19,6 +20,9 @@ export class EmployeeNewModalComponent extends Modalable implements OnInit {
 
     @Output()
     onSubmit: EventEmitter<Employee> = new EventEmitter<Employee>();
+
+    @ViewChild(ModalComponent)
+    modalComponent: ModalComponent;
 
     constructor(private employeeService: EmployeeService) {
         super();

@@ -12,6 +12,7 @@ import { EmployeeDeleteModalComponent } from './components/employee-delete-modal
 import { MyCurrencyPipe } from './pipes/my-currency.pipe';
 import { ModalComponent } from './components/modal/modal.component';
 import { TestNgContentComponent } from './components/test-ng-content/test-ng-content.component';
+import { ComponenteInlineComponent } from './components/componente-inline/componente-inline.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { TestNgContentComponent } from './components/test-ng-content/test-ng-con
         MyCurrencyPipe,
         ModalComponent,
         TestNgContentComponent,
+        ComponenteInlineComponent,
     ],
     imports: [
         BrowserModule,
